@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: rgba(255, 0, 0, 0.611);
+        }
+        a:active {
+            color: purple;
+        }
+        a::before {
+            content: '> ';
+        }
+        a::after {
+            content: ' <';
+        }
+    </style>
+</head>
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/happy-mistake.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Link para Downloads</h1>
+    <a href="media/happy-mistake.rar" download="happy-mistake.rar" type="application/zip">DOWLOAD</a>
+    <p><a href="index.html"><strong>Voltar</strong></a></p>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Social</title>
+    <style>
+        body {
+            background-color: rgb(139, 179, 166);
+        }
+        h1 { text-align: center;}
+        #youtube::before {
+            content: url(icones/icone-youtube.png);
+        }
+        p {
+            text-align: justify;
+        }
+        #github::before {
+            content: url(icones/icone-github.png);
+        }
+        #instagran::before {
+            content: url(icones/icone-instagram.png);
+        }
+        #linkedin::before {
+            content: url(icones/icone-linkedin.png);
+        }
+        #twitter::before {
+            content: url(icones/icone-twitter.png);
+        }
+        #facebook::before {
+            content: url(icones/icone-facebook.png);
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(62, 10, 110);
+        }
+        a:hover {
+           background-color: rgb(139, 179, 166);
+           color: black;
+           transition: 1s;
+           text-decoration: underline;
+        }
+    
+        a:active {
+            color: red;
+            transition: none;
+        }
+        div {
+            display: inline;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+  <h1>Minhas redes sociais</h1>
+  <div>
+      <h2>Quem sou eu?</h2>
+      <img src="imagens/foto-perfil-guanabara.png" alt="Foto Perfil">
+  </div>
+  <p>Meu nome é <strong>Gustavo Guanabara</strong>, sou professor de Tecnologia desde  1994 e hoje produzo conteúdo para quem esta iniciando no ramo da programação e desenvolvimento de sites/aplicações. São muitos anos dentro de sala de aula, tentando mostrar de forma simples e objetiva alguns conceitos que muita gente iniciante acha muito difícil.</p>
+  <h2>Como falar comigo?</h2>
+  <ul>
+    <li><a id="youtube" href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">/cursoemvideo</a> - Se insvrece lá no meu canal no YouTube</li>
+    <li><a id="github" href="https://gustavoguanabara.github.io" target="_blank" rel="external">/gustavoguanabara</a> - Acessa meu repositório público no GitHub</li>
+        <li><a id="instagran" href="https://www.instagram.com/gustavoguanabara/" target="_blank"
+            rel="external">/gustavoguanabara</a> - Me segue lá no Instagran</li>
+        <li><a id="linkedin" href="https://www.linkedin.com/in/guanabara/" target="_blank" rel="external">/guanabara</a> - Me adiciona lá no Linkedin</li>
+        <li><a id="twitter" href="https://twitter.com/guanabara"
+            target="_blank"
+            rel="external">/guanabara</a> - Me segue lá no Twitter</li>
+        <li><a id="facebook" href="https://www.facebook.com/gustavoguanabara" target="_blank"
+            rel="external">/gustavoguanabara</a> - Me acompanha lá no Facebook</li>
+  </ul>
+</body>
+</html>
