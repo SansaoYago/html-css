@@ -1,4 +1,4 @@
 # html-css
- Curso de HTML% e CSS3 do CursoemVideo
+ Curso de HTML5 e CSS3 do CursoemVideo
 
 <a href="https://sansaoyago.github.io/html-css/Desafios/desafio-007/">Executar o desafio 007</a>
