@@ -16,9 +16,15 @@
             border: 1px solid black;
             border-radius: 2px;
             text-align: center;
+            min-width: 60px;
         }
 
         td.transparente {
+            border-style: none;
+        }
+
+        .row {
+            width: 10px;
             border-style: none;
         }
 
@@ -70,93 +76,58 @@
     </style>
 </head>
 <body>
-    <h1>teste de tabela</h1>
-
     <table>
-        <tr>
-            <td class="ametais-reativos"><p class="cima">1</p><br> H <br><p class="baixo">Hidrogênio</p></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td><p class="cima">2</p><br>He<br><p class="baixo">Hélio</p></td>
-        </tr>
-        <tr>
-            <td><p class="cima">3</p><br>Li<br><p class="baixo">Lítio</p></td>
-            <td><p class="cima">4</p><br>Be<br><p class="baixo">Berílio</p></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td><p class="cima">5</p><br>B<br><p class="baixo">Boro</p></td>
-            <td class="ametais-reativos"><p class="cima">6</p><br>C<br><p class="baixo">Carbono</p></td>
-            <td class="ametais-reativos"><p class="cima">7</p><br>N<br><p class="baixo">Nitrogênio</p></td>
-            <td class="ametais-reativos"><p class="cima">8</p><br>O<br><p class="baixo">Oxigênio</p></td>
-            <td class="ametais-reativos"><p class="cima">9</p><br>F<br><p class="baixo">Flúor</p></td>
-            <td><p class="cima">10</p><br>Ne<br><p class="baixo">Neônio</p></td>
-        </tr>
-        <tr>
-            <td>Na</td>
-            <td>Mg</td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td class="transparente"></td>
-            <td>Al</td>
-            <td>Si</td>
-            <td>P</td>
-            <td>S</td>
-            <td>Cl</td>
-            <td>Ar</td>
-        </tr>
-        <tr>
-            <td>K</td>
-            <td>Ca</td>
-            <td>Sc</td>
-            <td class="transparente"></td>
-            <td>Ti</td>
-            <td>V</td>
-            <td>Cr</td>
-            <td>Mn</td>
-            <td>Fe</td>
-            <td>Co</td>
-            <td>Ni</td>
-            <td>Cu</td>
-            <td>Zn</td>
-            <td>Ga</td>
-            <td>Ge</td>
-            <td>As</td>
-            <td>Se</td>
-            <td>Br</td>
-            <td>Kr</td>
-        </tr>
+        <caption>Tabela Periódica</caption>
+        <tbody>
+            <tr>
+                <td class="ametais-reativos"><p class="cima">1</p><br> H <br><p class="baixo">Hidrogênio</p></td>
+                <td colspan="17" class="transparente"></td>
+                <td><p class="cima">2</p><br>He<br><p class="baixo">Hélio</p></td>
+            </tr>
+            <tr>
+                <td><p class="cima">3</p><br>Li<br><p class="baixo">Lítio</p></td>
+                <td><p class="cima">4</p><br>Be<br><p class="baixo">Berílio</p></td>
+                <td colspan="11" class="transparente"></td>
+                <td><p class="cima">5</p><br>B<br><p class="baixo">Boro</p></td>
+                <td class="ametais-reativos"><p class="cima">6</p><br>C<br><p class="baixo">Carbono</p></td>
+                <td class="ametais-reativos"><p class="cima">7</p><br>N<br><p class="baixo">Nitrogênio</p></td>
+                <td class="ametais-reativos"><p class="cima">8</p><br>O<br><p class="baixo">Oxigênio</p></td>
+                <td class="ametais-reativos"><p class="cima">9</p><br>F<br><p class="baixo">Flúor</p></td>
+                <td><p class="cima">10</p><br>Ne<br><p class="baixo">Neônio</p></td>
+            </tr>
+            <tr>
+                <td>Na</td>
+                <td>Mg</td>
+                <td colspan="11" class="transparente"></td>
+                <td>Al</td>
+                <td>Si</td>
+                <td>P</td>
+                <td>S</td>
+                <td>Cl</td>
+                <td>Ar</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>Ca</td>
+                <td>Sc</td>
+                <td rowspan="4" class="row"></td>
+                <td>Ti</td>
+                <td>V</td>
+                <td>Cr</td>
+                <td>Mn</td>
+                <td>Fe</td>
+                <td>Co</td>
+                <td>Ni</td>
+                <td>Cu</td>
+                <td>Zn</td>
+                <td>Ga</td>
+                <td>Ge</td>
+                <td>As</td>
+                <td>Se</td>
+                <td>Br</td>
+                <td>Kr</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
