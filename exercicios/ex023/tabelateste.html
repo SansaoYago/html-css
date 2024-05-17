@@ -7,14 +7,24 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 2em;
-            margin: 0px;
-            line-height: .8em;
+            font-size: 1.6em;
+            
+            padding: 0px;
+            line-height: .7em;
+        }
+
+        div {
+            overflow: auto;
+        }
+
+        caption {
+            font-weight: bolder;
         }
 
         tr, td {
             border: 1px solid black;
-            border-radius: 2px;
+            font-weight: bold;
+            border-radius: 4px;
             text-align: center;
             min-width: 60px;
         }
@@ -24,22 +34,32 @@
         }
 
         .row {
-            width: 10px;
             border-style: none;
         }
 
+        th {
+            font-size: 0.6em;
+            text-align: left;
+            width: 350px;
+            padding: 10px;
+        }
+
         p.cima {
-            display: block;
             font-size: 10px;
+            font-weight: normal;
             text-align: left;
             margin: 0px;
         }
 
         p.baixo {
-            display: block;
             font-size: 10px;
-            font-weight: bold;
+            font-weight: normal;
             margin: 0px;
+        }
+
+        span {
+            border-radius: 50%;
+            margin-right: 10px;
         }
 
         .metais-alcalinos {
@@ -85,155 +105,179 @@
     </style>
 </head>
 <body>
-    <table>
-        <caption>Tabela Periódica</caption>
-        <tbody>
-            <tr>
-                <td class="ametais-reativos"><p class="cima">1</p>H<p class="baixo">Hidrogênio</p></td>
-                <td colspan="17" class="transparente"></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">2</p>He<p class="baixo">Hélio</p></td>
-            </tr>
-            <tr>
-                <td class="metais-alcalinos"><p class="cima">3</p>Li<p class="baixo">Lítio</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">4</p>Be<p class="baixo">Berílio</p></td>
-                <td colspan="11" class="transparente"></td>
-                <td><p class="cima">5</p>B<p class="baixo">Boro</p></td>
-                <td class="ametais-reativos"><p class="cima">6</p>C<p class="baixo">Carbono</p></td>
-                <td class="ametais-reativos"><p class="cima">7</p>N<p class="baixo">Nitrogênio</p></td>
-                <td class="ametais-reativos"><p class="cima">8</p>O<p class="baixo">Oxigênio</p></td>
-                <td class="ametais-reativos"><p class="cima">9</p>F<p class="baixo">Flúor</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">10</p>Ne<p class="baixo">Neônio</p></td>
-            </tr>
-            <tr>
-                <td class="metais-alcalinos"><p class="cima">11</p>Na<p class="baixo">Sódio</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">12</p>Mg<p class="baixo">Magnésio</p></td>
-                <td colspan="11" class="transparente"></td>
-                <td><p class="cima">13</p>Al<p class="baixo">Alumínio</p></td>
-                <td><p class="cima">14</p>Si<p class="baixo">Silício</p></td>
-                <td class="ametais-reativos"><p class="cima">15</p>P<p class="baixo">Fósforo</p></td>
-                <td class="ametais-reativos"><p class="cima">16</p>S<p class="baixo">Enxofre</p></td>
-                <td class="ametais-reativos"><p class="cima">17</p>Cl<p class="baixo">Cloro</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">18</p>Ar<p class="baixo">Argônio</p></td>
-            </tr>
-            <tr>
-                <td class="metais-alcalinos"><p class="cima">19</p>K<p class="baixo">Potássio</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">20</p>Ca<p class="baixo">Cálcio</p></td>
-                <td><p class="cima">21</p>Sc<p class="baixo">Escândio</p></td>
-                <td rowspan="4" class="row"></td>
-                <td><p class="cima">22</p>Ti<p class="baixo">Titânio</p></td>
-                <td><p class="cima">23</p>V<p class="baixo">Vnádio</p></td>
-                <td><p class="cima">24</p>Cr<p class="baixo">Cromo</p></td>
-                <td><p class="cima">25</p>Mn<p class="baixo">Manganês</p></td>
-                <td><p class="cima">26</p>Fe<p  class="baixo">Ferro</p></td>
-                <td><p class="cima">27</p>Co<p class="baixo">Cobalto</p></td>
-                <td><p class="cima">28</p>Ni<p class="baixo">Níquel</p></td>
-                <td><p class="cima">29</p>Cu<p class="baixo">Cobre</p></td>
-                <td><p class="cima">30</p>Zn<p class="baixo">Zinco</p></td>
-                <td><p class="cima">31</p>Ga<p class="baixo">Gálio</p></td>
-                <td><p class="cima">32</p>Ge<p class="baixo">Germânio</p></td>
-                <td><p class="cima">33</p>As<p class="baixo">Arsênio</p></td>
-                <td class="ametais-reativos"><p class="cima">34</p>Se<p class="baixo">Selênio</p></td>
-                <td class="ametais-reativos"><p class="cima">35</p>Br<p class="baixo">Bromo</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">36</p>Kr<p class="baixo">Criptônio</p></td>
-            </tr>
-            <tr>
-                <td class="metais-alcalinos"><p class="cima">37</p>Rb<p class="baixo">Rubídio</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">38</p>Sr<p class="baixo">Estrôncio</p></td>
-                <td><p class="cima">39</p>Y<p class="baixo">Itrio</p></td>
-                <td><p class="cima">40</p>Zr<p class="baixo">Zircônio</p></td>
-                <td><p class="cima">41</p>Nb<p class="baixo">Nióbio</p></td>
-                <td><p class="cima">42</p>Mo<p class="baixo">Molibdênio</p></td>
-                <td><p class="cima">43</p>Tc<p class="baixo">Tecnécio</p></td>
-                <td><p class="cima">44</p>Ru<p class="baixo">Rutênio</p></td>
-                <td><p class="cima">45</p>Rh<p class="baixo">Ródio</p></td>
-                <td><p class="cima">46</p>Pd<p class="baixo">Paládio</p></td>
-                <td><p class="cima">47</p>Ag<p class="baixo">Prata</p></td>
-                <td><p class="cima">48</p>Cd<p class="baixo">Cádmio</p></td>
-                <td><p class="cima">49</p>In<p class="baixo">Indio</p></td>
-                <td><p class="cima">50</p>Sn<p class="baixo">Estanho</p></td>
-                <td><p class="cima">51</p>Sb<p class="baixo">Antimônio</p></td>
-                <td><p class="cima">52</p>Te<p class="baixo">Telúrio</p></td>
-                <td class="ametais-reativos"><p class="cima">53</p>I<p class="baixo">Iodo</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">54</p>Xe<p class="baixo">Xenônio</p></td>
-            </tr>
-            <tr>
-                <td class="metais-alcalinos"><p class="cima">55</p>Cs<p class="baixo">Césio</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">56</p>Ba<p class="baixo">Bário</p></td>
-                <td><p class="cima">57</p>La<p class="baixo">Lantânio</p></td>
-                <td><p class="cima">72</p>Hf<p class="baixo">Háfnio</p></td>
-                <td><p class="cima">73</p>Ta<p class="baixo">Tântalo</p></td>
-                <td><p class="cima">74</p>W<p class="baixo">Tungstênio</p></td>
-                <td><p class="cima">75</p>Re<p class="baixo">Rênio</p></td>
-                <td><p class="cima">76</p>Os<p class="baixo">Osmio</p></td>
-                <td><p class="cima">77</p>Ir<p class="baixo">Irídio</p></td>
-                <td><p class="cima">78</p>Pt<p class="baixo">Platina</p></td>
-                <td><p class="cima">79</p>Au<p class="baixo">Ouro</p></td>
-                <td><p class="cima">80</p>Hg<p class="baixo">Mercúrio</p></td>
-                <td><p class="cima">81</p>Tl<p class="baixo">Tálio</p></td>
-                <td><p class="cima">82</p>Pb<p class="baixo">Chumbo</p></td>
-                <td><p class="cima">83</p>Bi<p class="baixo">Bismuto</p></td>
-                <td><p class="cima">84</p>Po<p class="baixo">Polônio</p></td>
-                <td><p class="cima">85</p>At<p class="baixo">Astato</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">86</p>Rn<p class="baixo">Radônio</p></td>
-            </tr>
-            <tr>
-                <td class="metais-alcalinos"><p class="cima">87</p>Fr<p class="baixo">Frâncio</p></td>
-                <td class="metais-alcalinoterrosos"><p class="cima">88</p>Ra<p class="baixo">Rádio</p></td>
-                <td><p class="cima">89</p>Ac<p class="baixo">Actínio</p></td>
-                <td><p class="cima">104</p>Rf<p class="baixo">Rutherfórdio</p></td>
-                <td><p class="cima">105</p>Db<p class="baixo">Dúbnio</p></td>
-                <td><p class="cima">106</p>Sg<p class="baixo">Seabórgio</p></td>
-                <td><p class="cima">107</p>Bh<p class="baixo">Bóhrio</p></td>
-                <td><p class="cima">108</p>Hs<p class="baixo">Hássio</p></td>
-                <td><p class="cima">109</p>Mt<p class="baixo">Meitnério</p></td>
-                <td><p class="cima">110</p>Ds<p class="baixo">Darmstádtio</p></td>
-                <td><p class="cima">111</p>Rg<p class="baixo">Roentgênio</p></td>
-                <td><p class="cima">112</p>Cn<p class="baixo">Copernício</p></td>
-                <td><p class="cima">113</p>Nh<p class="baixo">Nihônio</p></td>
-                <td><p class="cima">114</p>Fl<p class="baixo">Fleróvio</p></td>
-                <td><p class="cima">115</p>Mc<p class="baixo">Moscóvio</p></td>
-                <td><p class="cima">116</p>Lv<p class="baixo">Livermório</p></td>
-                <td><p class="cima">117</p>Ts<p class="baixo">Tennesso</p></td>
-                <td><p class="cima">118</p>Og<p class="baixo">Oganessônio</p></td>
-            </tr>
-            <tr>
-                <td style="height: 30px;" colspan="11" class="transparente"></td>
-            </tr>
-            <tr>
-                <td colspan="4" class="transparente"></td>
-                <td><p class="cima">58</p>Ce<p class="baixo">Cério</p></td>
-                <td><p class="cima">59</p>Pr<p class="baixo">Praseodímio</p></td>
-                <td><p class="cima">60</p>Nd<p class="baixo">Neodímio</p></td>
-                <td><p class="cima">61</p>Pm<p class="baixo">Promécio</p></td>
-                <td><p class="cima">62</p>Sm<p class="baixo">Samário</p></td>
-                <td><p class="cima">63</p>Eu<p class="baixo">Európio</p></td>
-                <td><p class="cima">64</p>Gd<p class="baixo">Gadolínio</p></td>
-                <td><p class="cima">65</p>Tb<p class="baixo">Térbio</p></td>
-                <td><p class="cima">66</p>Dy<p class="baixo">Disprósio</p></td>
-                <td><p class="cima">67</p>Ho<p class="baixo">Hólmio</p></td>
-                <td><p class="cima">68</p>Er<p class="baixo">Érbio</p></td>
-                <td><p class="cima">69</p>Tm<p class="baixo">Túlio</p></td>
-                <td><p class="cima">70</p>Yb<p class="baixo">Itérbio</p></td>
-                <td><p class="cima">71</p>Lu<p class="baixo">Lutécio</p></td>
-            </tr>
-            <tr>
-                <td colspan="4" class="transparente"></td>
-                <td><p class="cima">90</p>Th<p class="baixo">Tório</p></td>
-                <td><p class="cima">91</p>Pa<p class="baixo">Protactínio</p></td>
-                <td><p class="cima">92</p>U<p class="baixo">Urânio</p></td>
-                <td><p class="cima">93</p>Np<p class="baixo">Netúnio</p></td>
-                <td><p class="cima">94</p>Pu<p class="baixo">Plutônio</p></td>
-                <td><p class="cima">95</p>Am<p class="baixo">Amerício</p></td>
-                <td><p class="cima">96</p>Cm<p class="baixo">Cúrio</p></td>
-                <td><p class="cima">97</p>Bk<p class="baixo">Berquélio</p></td>
-                <td><p class="cima">98</p>Cf<p class="baixo">Califórnio</p></td>
-                <td><p class="cima">99</p>Es<p class="baixo">Einstênio</p></td>
-                <td><p class="cima">100</p>Fm<p class="baixo">Férmio</p></td>
-                <td><p class="cima">101</p>Md<p class="baixo">Mendelévio</p></td>
-                <td><p class="cima">102</p>No<p class="baixo">Nobélio</p></td>
-                <td><p class="cima">103</p>Lr<p class="baixo">Laurêncio</p></td>
-            </tr>
-        </tbody>
-    </table>
+    <div>
+        <table>
+            <caption>Tabela Periódica</caption>
+            <tbody>
+                <tr>
+                    <td class="ametais-reativos"><p class="cima">1</p>H<p class="baixo">Hidrogênio</p></td>
+                    <td colspan="17" class="transparente"></td>
+                    <td class="gases-nobres"><p class="cima">2</p>He<p class="baixo">Hélio</p></td>
+                </tr>
+                <tr>
+                    <td class="metais-alcalinos"><p class="cima">3</p>Li<p class="baixo">Lítio</p></td>
+                    <td class="metais-alcalinoterrosos"><p class="cima">4</p>Be<p class="baixo">Berílio</p></td>
+                    <td colspan="11" class="transparente"></td>
+                    <td class="semimetais"><p class="cima">5</p>B<p class="baixo">Boro</p></td>
+                    <td class="ametais-reativos"><p class="cima">6</p>C<p class="baixo">Carbono</p></td>
+                    <td class="ametais-reativos"><p class="cima">7</p>N<p class="baixo">Nitrogênio</p></td>
+                    <td class="ametais-reativos"><p class="cima">8</p>O<p class="baixo">Oxigênio</p></td>
+                    <td class="ametais-reativos"><p class="cima">9</p>F<p class="baixo">Flúor</p></td>
+                    <td class="gases-nobres"><p class="cima">10</p>Ne<p class="baixo">Neônio</p></td>
+                </tr>
+                <tr>
+                    <td class="metais-alcalinos"><p class="cima">11</p>Na<p class="baixo">Sódio</p></td>
+                    <td class="metais-alcalinoterrosos"><p class="cima">12</p>Mg<p class="baixo">Magnésio</p></td>
+                    <td colspan="11" class="transparente"></td>
+                    <td class="metais-pos-transicao"><p class="cima">13</p>Al<p class="baixo">Alumínio</p></td>
+                    <td class="semimetais"><p class="cima">14</p>Si<p class="baixo">Silício</p></td>
+                    <td class="ametais-reativos"><p class="cima">15</p>P<p class="baixo">Fósforo</p></td>
+                    <td class="ametais-reativos"><p class="cima">16</p>S<p class="baixo">Enxofre</p></td>
+                    <td class="ametais-reativos"><p class="cima">17</p>Cl<p class="baixo">Cloro</p></td>
+                    <td class="gases-nobres"><p class="cima">18</p>Ar<p class="baixo">Argônio</p></td>
+                </tr>
+                <tr>
+                    <td class="metais-alcalinos"><p class="cima">19</p>K<p class="baixo">Potássio</p></td>
+                    <td class="metais-alcalinoterrosos"><p class="cima">20</p>Ca<p class="baixo">Cálcio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">21</p>Sc<p class="baixo">Escândio</p></td>
+                    <td rowspan="4" class="row"></td>
+                    <td class="metais-de-transicao"><p class="cima">22</p>Ti<p class="baixo">Titânio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">23</p>V<p class="baixo">Vnádio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">24</p>Cr<p class="baixo">Cromo</p></td>
+                    <td class="metais-de-transicao"><p class="cima">25</p>Mn<p class="baixo">Manganês</p></td>
+                    <td class="metais-de-transicao"><p class="cima">26</p>Fe<p  class="baixo">Ferro</p></td>
+                    <td class="metais-de-transicao"><p class="cima">27</p>Co<p class="baixo">Cobalto</p></td>
+                    <td class="metais-de-transicao"><p class="cima">28</p>Ni<p class="baixo">Níquel</p></td>
+                    <td class="metais-de-transicao"><p class="cima">29</p>Cu<p class="baixo">Cobre</p></td>
+                    <td class="metais-de-transicao"><p class="cima">30</p>Zn<p class="baixo">Zinco</p></td>
+                    <td class="metais-pos-transicao"><p class="cima">31</p>Ga<p class="baixo">Gálio</p></td>
+                    <td class="semimetais"><p class="cima">32</p>Ge<p class="baixo">Germânio</p></td>
+                    <td class="semimetais"><p class="cima">33</p>As<p class="baixo">Arsênio</p></td>
+                    <td class="ametais-reativos"><p class="cima">34</p>Se<p class="baixo">Selênio</p></td>
+                    <td class="ametais-reativos"><p class="cima">35</p>Br<p class="baixo">Bromo</p></td>
+                    <td class="gases-nobres"><p class="cima">36</p>Kr<p class="baixo">Criptônio</p></td>
+                </tr>
+                <tr>
+                    <td class="metais-alcalinos"><p class="cima">37</p>Rb<p class="baixo">Rubídio</p></td>
+                    <td class="metais-alcalinoterrosos"><p class="cima">38</p>Sr<p class="baixo">Estrôncio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">39</p>Y<p class="baixo">Itrio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">40</p>Zr<p class="baixo">Zircônio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">41</p>Nb<p class="baixo">Nióbio</p></td>
+                    <td class="metais-de-transicao"> <p class="cima">42</p>Mo<p class="baixo">Molibdênio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">43</p>Tc<p class="baixo">Tecnécio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">44</p>Ru<p class="baixo">Rutênio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">45</p>Rh<p class="baixo">Ródio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">46</p>Pd<p class="baixo">Paládio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">47</p>Ag<p class="baixo">Prata</p></td>
+                    <td class="metais-de-transicao"><p class="cima">48</p>Cd<p class="baixo">Cádmio</p></td>
+                    <td class="metais-pos-transicao"><p class="cima">49</p>In<p class="baixo">Indio</p></td>
+                    <td class="metais-pos-transicao"><p class="cima">50</p>Sn<p class="baixo">Estanho</p></td>
+                    <td class="semimetais"><p class="cima">51</p>Sb<p class="baixo">Antimônio</p></td>
+                    <td class="semimetais"><p class="cima">52</p>Te<p class="baixo">Telúrio</p></td>
+                    <td class="ametais-reativos"><p class="cima">53</p>I<p class="baixo">Iodo</p></td>
+                    <td class="gases-nobres"><p class="cima">54</p>Xe<p class="baixo">Xenônio</p></td>
+                </tr>
+                <tr>
+                    <td class="metais-alcalinos"><p class="cima">55</p>Cs<p class="baixo">Césio</p></td>
+                    <td class="metais-alcalinoterrosos"><p class="cima">56</p>Ba<p class="baixo">Bário</p></td>
+                    <td class="lantanideos"><p class="cima">57</p>La<p class="baixo">Lantânio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">72</p>Hf<p class="baixo">Háfnio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">73</p>Ta<p class="baixo">Tântalo</p></td>
+                    <td class="metais-de-transicao"><p class="cima">74</p>W<p class="baixo">Tungstênio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">75</p>Re<p class="baixo">Rênio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">76</p>Os<p class="baixo">Osmio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">77</p>Ir<p class="baixo">Irídio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">78</p>Pt<p class="baixo">Platina</p></td>
+                    <td class="metais-de-transicao"><p class="cima">79</p>Au<p class="baixo">Ouro</p></td>
+                    <td class="metais-de-transicao"><p class="cima">80</p>Hg<p class="baixo">Mercúrio</p></td>
+                    <td class="metais-pos-transicao"><p class="cima">81</p>Tl<p class="baixo">Tálio</p></td>
+                    <td class="metais-pos-transicao"><p class="cima">82</p>Pb<p class="baixo">Chumbo</p></td>
+                    <td class="metais-pos-transicao"><p class="cima">83</p>Bi<p class="baixo">Bismuto</p></td>
+                    <td class="metais-pos-transicao"><p class="cima">84</p>Po<p class="baixo">Polônio</p></td>
+                    <td class="metais-pos-transicao"><p class="cima">85</p>At<p class="baixo">Astato</p></td>
+                    <td class="gases-nobres"><p class="cima">86</p>Rn<p class="baixo">Radônio</p></td>
+                </tr>
+                <tr>
+                    <td class="metais-alcalinos"><p class="cima">87</p>Fr<p class="baixo">Frâncio</p></td>
+                    <td class="metais-alcalinoterrosos"><p class="cima">88</p>Ra<p class="baixo">Rádio</p></td>
+                    <td class="actinideos"><p class="cima">89</p>Ac<p class="baixo">Actínio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">104</p>Rf<p class="baixo">Rutherfórdio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">105</p>Db<p class="baixo">Dúbnio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">106</p>Sg<p class="baixo">Seabórgio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">107</p>Bh<p class="baixo">Bóhrio</p></td>
+                    <td class="metais-de-transicao"><p class="cima">108</p>Hs<p class="baixo">Hássio</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">109</p>Mt<p class="baixo">Meitnério</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">110</p>Ds<p class="baixo">Darmstádtio</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">111</p>Rg<p class="baixo">Roentgênio</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">112</p>Cn<p class="baixo">Copernício</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">113</p>Nh<p class="baixo">Nihônio</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">114</p>Fl<p class="baixo">Fleróvio</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">115</p>Mc<p class="baixo">Moscóvio</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">116</p>Lv<p class="baixo">Livermório</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">117</p>Ts<p class="baixo">Tennesso</p></td>
+                    <td class="propriedades-desconhecidas"><p class="cima">118</p>Og<p class="baixo">Oganessônio</p></td>
+                </tr>
+                <tr>
+                    <td style="height: 30px;" colspan="11" class="transparente"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="transparente"></td>
+                    <td class="lantanideos"><p class="cima">58</p>Ce<p class="baixo">Cério</p></td>
+                    <td class="lantanideos"><p class="cima">59</p>Pr<p class="baixo">Praseodímio</p></td>
+                    <td class="lantanideos"><p class="cima">60</p>Nd<p class="baixo">Neodímio</p></td>
+                    <td class="lantanideos"><p class="cima">61</p>Pm<p class="baixo">Promécio</p></td>
+                    <td class="lantanideos"><p class="cima">62</p>Sm<p class="baixo">Samário</p></td>
+                    <td class="lantanideos"><p class="cima">63</p>Eu<p class="baixo">Európio</p></td>
+                    <td class="lantanideos"><p class="cima">64</p>Gd<p class="baixo">Gadolínio</p></td>
+                    <td class="lantanideos"><p class="cima">65</p>Tb<p class="baixo">Térbio</p></td>
+                    <td class="lantanideos"><p class="cima">66</p>Dy<p class="baixo">Disprósio</p></td>
+                    <td class="lantanideos"><p class="cima">67</p>Ho<p class="baixo">Hólmio</p></td>
+                    <td class="lantanideos"><p class="cima">68</p>Er<p class="baixo">Érbio</p></td>
+                    <td class="lantanideos"><p class="cima">69</p>Tm<p class="baixo">Túlio</p></td>
+                    <td class="lantanideos"><p class="cima">70</p>Yb<p class="baixo">Itérbio</p></td>
+                    <td class="lantanideos"><p class="cima">71</p>Lu<p class="baixo">Lutécio</p></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="transparente"></td>
+                    <td class="actinideos"><p class="cima">90</p>Th<p class="baixo">Tório</p></td>
+                    <td class="actinideos"><p class="cima">91</p>Pa<p class="baixo">Protactínio</p></td>
+                    <td class="actinideos"><p class="cima">92</p>U<p class="baixo">Urânio</p></td>
+                    <td class="actinideos"><p class="cima">93</p>Np<p class="baixo">Netúnio</p></td>
+                    <td class="actinideos"><p class="cima">94</p>Pu<p class="baixo">Plutônio</p></td>
+                    <td class="actinideos"><p class="cima">95</p>Am<p class="baixo">Amerício</p></td>
+                    <td class="actinideos"><p class="cima">96</p>Cm<p class="baixo">Cúrio</p></td>
+                    <td class="actinideos"><p class="cima">97</p>Bk<p class="baixo">Berquélio</p></td>
+                    <td class="actinideos"><p class="cima">98</p>Cf<p class="baixo">Califórnio</p></td>
+                    <td class="actinideos"><p class="cima">99</p>Es<p class="baixo">Einstênio</p></td>
+                    <td class="actinideos"><p class="cima">100</p>Fm<p class="baixo">Férmio</p></td>
+                    <td class="actinideos"><p class="cima">101</p>Md<p class="baixo">Mendelévio</p></td>
+                    <td class="actinideos"><p class="cima">102</p>No<p class="baixo">Nobélio</p></td>
+                    <td class="actinideos"><p class="cima">103</p>Lr<p class="baixo">Laurêncio</p></td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tfoot>
+                <tr>
+                    <th><span class="metais-alcalinos"  style="color: #244D57;">oo</span>Metais alcalinos</th>
+                    <th><span class="metais-alcalinoterrosos" style="border-radius: 50%; color: #622E39;">oo</span>Metais alcalinoterrosos</th>
+                    <th><span class="metais-de-transicao" style="color: #433C65;">oo</span>Metais de transição</th>
+                    <th><span class="metais-pos-transicao" style="color: #2F4D47;">oo</span>Metais pós-transição</th>
+                    <th><span class="semimetais" style="color: #523E1B;">oo</span>Semimetais</th>
+                </tr>
+                <tr>
+                    <th><span class="ametais-reativos" style="color: #2A4165
+                        ;">oo</span>Ametais reativos</th>
+                    <th><span class="gases-nobres" style="color: #623842
+                        ;">oo</span>Gases nobres</th>
+                    <th><span class="lantanideos" style="color: #004A77
+                        ;">oo</span>Lantanídeos</th>
+                    <th><span class="actinideos" style="color: #613B28
+                        ;">oo</span>Actinídeos</th>
+                    <th><span class="propriedades-desconhecidas" style="color: #46474C;">oo</span>Propriedades desconhecidas</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
