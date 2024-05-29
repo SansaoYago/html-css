@@ -4,6 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+      label {
+        font-size: 1.5em;
+        font-weight: bolder;
+      }
+
+      input {
+        text-transform: uppercase;
+      }
+
+        form {
+            background-image: linear-gradient(to bottom, lightblue, transparent);
+            display: inline-block;
+            border: 1px solid rgba(0, 0, 0, 0.152);
+           max-width: 350px;
+           padding: 10px;
+           border-radius: 10px;
+        }
+
+        #botao {
+            text-align: center;
+        }
+
+        #botao input {
+            background-color: rgba(128, 128, 128, 0.442);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body>
     <h1>Teste de formulário</h1>
@@ -28,7 +63,7 @@
             <label for="ihora">Hora da Prova</label>
             <input type="time" name="hora" id="ihora" required>
         </p>
-        <p>
+        <p id="botao">
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
