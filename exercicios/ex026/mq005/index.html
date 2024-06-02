@@ -13,7 +13,7 @@
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         
-            <menu id="Menu">
+            <menu id="itens">
                 <ul>
                     <li><a href="#">Opção 1</a></li>
                     <li><a href="#">Opção 2</a></li>
@@ -37,18 +37,18 @@
     <script>
 
         function mudouTamanho() {
-            if (window.innerwidth >= 768) {
-                Menu.style.display = 'block'
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
             } else {
-                Menu.style.display = 'none'
+                itens.style.display = 'none'
             }
         }
 
         function clickMenu() {
-            if (Menu.style.display == 'block') {
-                Menu.style.display = 'none'
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
             } else {
-                Menu.style.display = 'block'
+                itens.style.display = 'block'
             }
         }
     </script>
