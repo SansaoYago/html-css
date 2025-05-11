@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: 'moonree';
+            src: url('font/MOONREE.ttf');
+        }
+
+        #circle1 {
+            position: absolute;
+            top: 6%;
+            left: 12%;
+            background-color: black;
+            width: 12px;
+            height: 12px;
+            
+            border-radius: 50%;
+        }
+
+        #circle2 {
+            position: absolute;
+            left: 80%;
+            width: 8px;
+            height: 8px;
+            border: 5px solid black;
+            border-radius: 50%;
+        }
+
+        #circle3 {
+            position: absolute;
+            top: 80%;
+            left: 70%;
+            width: 35px;
+            height: 35px;
+            border: 4px solid black;
+            border-radius: 50%;
+        }
+
+        img {
+            width: 60%;
+            margin: auto;
+        }
+
+        main {
+            background-color: #ABACA9;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #item {
+            position: relative;
+            font-family: 'moonree';
+            background-color: #D9DCDB;
+            display: flex;
+            flex-flow: column nowrap;
+            width: 180px;
+            height: auto;
+            border: 2px solid rgba(255, 255, 255, 0.552);
+            padding: 15px;
+            border-radius: 22px;
+            padding-bottom: 50px;
+            box-shadow: -25px 25px 20px rgba(0, 0, 0, 0.633);
+        }
+
+        h2 {
+            padding-top: 10px;
+            border-bottom: 4px solid black;
+        }
+
+        footer {
+            margin-top: 10px;
+        }
+
+        span {
+            opacity: 80%;
+            text-shadow: 2px 2px 1px #D9DCDB;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+        <div id="item">
+            <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+            
+            <img src="img/ico-perfil.png" alt="Icone de um perfil">
+            <h1><span>Jahy</span></h1>
+            <caption>Profile Picture</caption>
+            <h2><span>Profile Picture</span></h2>
+            <h2><span>Name</span></h2>
+            <footer>
+                <p><span>flex box</span></p>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
