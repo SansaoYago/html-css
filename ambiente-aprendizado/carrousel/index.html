@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel</title>
+    <style>
+        .carrousel {
+            border: 1px solid;
+
+        }
+        .carrousel-container {
+            width: 300px;
+            padding: 5px;
+            border: 3px solid green;
+            overflow: hidden;
+        }
+
+        .carrousel-track {
+            display: flex;
+            transition: transform 0.3s ease;
+            gap: 20px;
+            width: fit-content;
+        }
+
+        .card {
+            flex: 0 0 300px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="carrousel">
+        <div class="carrousel-container">
+            <div class="carrousel-track">
+                <div class="card">Card1</div>
+                <div class="card">Card2</div>
+                <div class="card">Card3</div>
+            </div>
+        </div>
+        <button onclick="moveCarrousel(-1)">←</button>
+        <button onclick="moveCarrousel(1)">→</button>
+    </div>
+    <script>
+        const track = document.querySelector(".carrousel-track")
+        const cards = document.querySelectorAll(".card")
+        const container = document.querySelector(".carrousel-container")
+
+        console.log('Número de cards: ', cards.length)
+        console.log('Largura do container: ', container.offsetWidth)
+
+        //Calcular medidas
+
+        const cardWidth = cards[0].offsetWidth
+        const gap = parseInt(getComputedStyle(track).gap) || 20
+        const moveDistance = cardWidth + gap
+
+        //Controlar posição
+        let currentIndex = 0
+        let currentPosition = 0
+        const maxIndex = cards.length - 1
+
+        console.log('resumo: ', {
+            numeroCards: cards.length,
+            larguraCard: cardWidth,
+            gap: gap,
+            distanciaMovimento: moveDistance,
+            maxIndex: maxIndex 
+        })
+
+        //|Função para mover
+        function moveCarrousel(direction) {
+            const newIndex = currentIndex + direction
+
+            //Verificar limites
+            if (newIndex < 0 || newIndex > maxIndex) {
+                console.log('Limite atingido!')
+                return
+            }
+
+            //Atualizar posição
+
+            currentIndex = newIndex
+            currentPosition = currentIndex * moveDistance
+            track.style.transform = `translateX(-${currentPosition}px)`
+
+            console.log(`Card ${currentIndex + 1} de ${cards.length}`)
+        }
+    </script>
+</body>
+</html>
